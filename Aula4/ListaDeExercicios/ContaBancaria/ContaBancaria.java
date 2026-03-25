@@ -1,6 +1,7 @@
 package Aula4.ListaDeExercicios.ContaBancaria;
 
 import java.util.Random;
+import java.util.Scanner;
 
 
 public class ContaBancaria {
@@ -9,17 +10,14 @@ public class ContaBancaria {
     private Double saldo;
     private Double limite;
 
-    public ContaBancaria(int numeroDaconta, Double saldo, Double limite){
-        this.numeroDaconta = numeroDaconta;
+    public ContaBancaria(Double saldo, Double limite){
+        Random rand = new Random();
+        this.numeroDaconta = rand.nextInt(9000) + 1000;
         this.saldo = saldo;
         this.limite = limite;
     }
 
-    //Setter de numero da conta
-    public void SetNumeroDaConta(){
-        Random rand = new Random();
-        this.numeroDaconta = rand.nextInt(9000) + 1000;
-    }
+
     //Getter de numero da conta
     public int GetNumeroDaConta(){
         return this.numeroDaconta;
@@ -46,5 +44,19 @@ public class ContaBancaria {
     //Getter de limite
     public Double Getlimite(){
         return this.limite;
+    }
+
+    public String sacar(){
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Quanto voce deseja sacar?");
+        double valor = scanner.nextDouble(); 
+        if(this.saldo < valor){
+            return "Saldo insuficiente.";
+        }
+        else{
+            this.saldo -= valor;
+            return "Saque efetuado com sucesso! Saldo atual da conta: "+this.saldo+;
+        }   
     }
 }
