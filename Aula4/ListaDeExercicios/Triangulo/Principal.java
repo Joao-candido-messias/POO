@@ -10,7 +10,7 @@ public class Principal {
 
         System.out.println(t.getLados());
 
-        t.setC(10); // inválido
+        t.setC(10);
         System.out.println(t.getLados());
     }
 }
