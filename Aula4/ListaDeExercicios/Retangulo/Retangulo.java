@@ -1,4 +1,4 @@
-package Aula4.Retangulo;
+package Aula4.ListaDeExercicios.Retangulo;
 
 public class Retangulo {
     private double largura;

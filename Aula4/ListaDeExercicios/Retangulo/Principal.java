@@ -1,4 +1,4 @@
-package Aula4.Retangulo;
+package Aula4.ListaDeExercicios.Retangulo;
 
 public class Principal {
     public static void main(String[] args) {
