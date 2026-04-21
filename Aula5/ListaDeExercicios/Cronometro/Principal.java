@@ -1,5 +1,3 @@
-package Aula4.ListaDeExercicios.Cronometro;
-
 public class Principal {
     public static void main(String[] args) {
         Cronometro c = new Cronometro();

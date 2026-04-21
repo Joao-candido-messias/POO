@@ -1,5 +1,3 @@
-package Aula4.ListaDeExercicios.Termometro;
-
 public class Principal {
     public static void main(String[] args) {
         Termometro t = new Termometro();

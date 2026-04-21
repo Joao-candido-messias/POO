@@ -1,5 +1,3 @@
-package Aula4;
-
 public class Aluno{
 
     public String nome;

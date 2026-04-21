@@ -1,5 +1,3 @@
-package Aula4.ListaDeExercicios.Termometro;
-
 public class Termometro {
     private double celsius;
 

@@ -1,5 +1,3 @@
-package Aula4.ListaDeExercicios.Triangulo;
-
 public class Principal {
     public static void main(String[] args) {
         Triangulo t = new Triangulo();

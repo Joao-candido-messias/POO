@@ -1,5 +1,3 @@
-package Aula4.ListaDeExercicios.Produto;
-
 public class Produto {
     private int quantidadeEmEstoque;
 

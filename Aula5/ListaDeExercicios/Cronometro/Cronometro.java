@@ -1,5 +1,3 @@
-package Aula4.ListaDeExercicios.Cronometro;
-
 public class Cronometro {
     private int segundos;
 

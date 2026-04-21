@@ -1,5 +1,3 @@
-package Aula4.ListaDeExercicios.Estudante;
-
 import java.util.Scanner;
     public class Estudante {
         Scanner scanner = new Scanner(System.in);

@@ -1,5 +1,3 @@
-package Aula4.ListaDeExercicios.Triangulo;
-
 public class Triangulo {
     private double a;
     private double b;

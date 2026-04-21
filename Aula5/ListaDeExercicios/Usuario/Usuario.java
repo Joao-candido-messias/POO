@@ -1,5 +1,3 @@
-package Aula4.ListaDeExercicios.Usuario;
-
 public class Usuario {
     private String nome;
     private String senha;

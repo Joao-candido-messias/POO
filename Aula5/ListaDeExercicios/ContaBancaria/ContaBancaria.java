@@ -1,5 +1,3 @@
-package Aula4.ListaDeExercicios.ContaBancaria;
-
 import java.util.Random;
 import java.util.Scanner;
 
