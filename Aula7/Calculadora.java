@@ -1,3 +1,4 @@
+package Aula7;
 import java.util.Scanner;
 
 public class Calculadora{
