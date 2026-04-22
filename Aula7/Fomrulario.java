@@ -8,8 +8,7 @@ public class Fomrulario {
             
             System.out.println("Insira a sua idade:");
             idade = scanner.nextLine();
-            
-            System.out.println("Idade digitada: "+ Integer.parseInt(idade));
+            //System.out.println("Idade digitada: "+ Integer.parseInt(idade)); Apenas confirmava o sucesso da conversão.
         }catch(NumberFormatException e){
             System.out.println("Por favor, utilize apenas algarismos numéricos.");
         }
