@@ -16,13 +16,13 @@ public class NaveExploracao extends NaveEspacial{
     }
 
     @Override
-    public double calcularConsumo(double distanciaEmAnosLuz) throws CapacidadeInsuficiente{
+    public double calcularConsumo(double distanciaEmAnosLuz) throws CombustivelInsuficienteException{
         double consumo = distanciaEmAnosLuz * 0.3;
         if(this.getPossuiSensoresAvancados()){
             consumo += 50;
         }
         if(consumo > this.getCombustivelAtual()){
-            throw new CapacidadeInsuficiente("Niveis de combustivel insuficientes para esta viagem!");
+            throw new CombustivelInsuficienteException("Niveis de combustivel insuficientes para esta viagem!");
         }
         return consumo;    
     }
