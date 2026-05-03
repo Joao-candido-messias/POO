@@ -75,10 +75,7 @@ abstract class NaveEspacial{
             double consumo = calcularConsumo(distancia);
 
             combustivelAtual -= consumo;
-
-            System.out.println("A nave " + identificador +
-                " viajou " + distancia +
-                " anos-luz. Combustível restante: " + combustivelAtual + ".");
+            System.out.printf("A nave %s viajou %.1f anos-luz. Combustível restante: %.2f%n",identificador, distancia, combustivelAtual);
         }catch (CombustivelInsuficienteException e){
             System.out.println(e.getMessage());
         }
