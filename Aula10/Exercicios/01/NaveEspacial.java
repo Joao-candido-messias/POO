@@ -34,7 +34,7 @@ abstract class NaveEspacial{
         return this.combustivelAtual;
     }
     //setter de combustivelAtual
-    public void setCombustivelAtual(double combustivelAtual) throws CombustivelInvalidoException {
+    public void setCombustivelAtual(double combustivelAtual) throws CombustivelInvalidoException{
         //Garante que  combustivelAtual nunca seja maior que combustivelMaximo nem menor que 0
         if(combustivelAtual > this.combustivelMaximo || combustivelAtual < 0){
             throw new CombustivelInvalidoException("Valor de combustivel invalido!");
@@ -54,14 +54,14 @@ abstract class NaveEspacial{
 
     /**
      * Metodo que calcula o consumo de um trajeto
-     * @param distanciaEmAnosLuz: Distância em anos luz do trajeto
-     * @return: Consumo necessário para efetuar o trajeto 
+     * @param distanciaEmAnosLuz Distância em anos luz do trajeto
+     * @return Consumo necessário para efetuar o trajeto 
      */
     public abstract double calcularConsumo(double distanciaEmAnosLuz);
 
     /**
      * Metodo que verifica a possibilidade de uma naveEspacial viajar em função do seu consumo e de seu combustivelAtual
-     * @param distancia: Distância da viagem
+     * @param distancia Distância da viagem
      */
     public void viajar(double distancia){
         double consumo = calcularConsumo(distancia);
