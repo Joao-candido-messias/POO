@@ -48,6 +48,7 @@ public class Medico extends FuncionarioHospital{
      * @return O salário total do médico.
      * @throws ValorInvalidoException Se houver valores inválidos.
      */
+    @Override
     public double calcularSalario(){
         double salarioBase = getSalarioBase();
         double salarioTotal = salarioBase + (valorPorPlantao * quantidadePlantoes);
