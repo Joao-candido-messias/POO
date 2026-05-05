@@ -35,7 +35,6 @@ public class Enfermeiro extends FuncionarioHospital{
     /**
      * Calcula o salário total do enfermeiro. Considerando seu salario base seu percentualInsalubridade e suas horas extras
      * @return O salário total do enfermeiro.
-     * @throws ValorInvalidoException Se houver valores inválidos.
      */
     @Override
     public double calcularSalario(){
