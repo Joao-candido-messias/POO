@@ -59,7 +59,7 @@ abstract class NaveEspacial{
     }
 
     /**
-     * Metodo que calcula o consumo de um trajeto
+     * Metodo abstrato que calcula o consumo de um trajeto
      * @param distanciaEmAnosLuz Distância em anos luz do trajeto
      * @return Consumo necessário para efetuar o trajeto 
      */
