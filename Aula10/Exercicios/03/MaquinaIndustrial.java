@@ -1,7 +1,7 @@
 abstract class MaquinaIndustrial{
     private String numeroDeserie;
     private boolean ligada;
-    private int pecaProduzidasTotais;
+    private int pecasProduzidasTotais;
     private double energiaConsumidaKWh;
 
     public MaquinaIndustrial(String numeroDeserie){

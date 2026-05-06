@@ -27,7 +27,7 @@ public class InjetoraPlastico extends MaquinaIndustrial{
      * @throws FaltaMateriaPrimaException: Para quando a quantidade de materia prima é insuficiente 
      */
     @Override
-    public void produzirLote(int quantidade) throws FaltaMateriaPrimaException {
+    public void produzirLote(int quantidade) throws FaltaMateriaPrimaException{
 
         if (!getLigada()) {
             throw new IllegalStateException("Máquina desligada.");
@@ -50,6 +50,5 @@ public class InjetoraPlastico extends MaquinaIndustrial{
         registrarProducao(quantidade, totalEnergia);
 
         System.out.println("Produção concluída com sucesso: " + quantidade + " peças.");
-        return;
     }
 }
