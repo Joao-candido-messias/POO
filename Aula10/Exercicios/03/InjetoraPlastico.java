@@ -27,28 +27,35 @@ public class InjetoraPlastico extends MaquinaIndustrial{
      * @throws FaltaMateriaPrimaException: Para quando a quantidade de materia prima é insuficiente 
      */
     @Override
-    public void produzirLote(int quantidade) throws FaltaMateriaPrimaException{
+    public void produzirLote(int quantidade) throws FaltaMateriaPrimaException {
 
         if (!getLigada()) {
-            throw new IllegalStateException("Máquina desligada.");
+            System.out.println("Máquina desligada.");
+            return;
+        }
+
+        if (quantidade <= 0) {
+            throw new IllegalArgumentException("Quantidade inválida.");
         }
 
         double consumoPorPeca = 0.2;
         double energiaPorPeca = 0.5;
 
         double totalPlasticoNecessario = quantidade * consumoPorPeca;
-        double totalEnergia = quantidade * energiaPorPeca;
 
         if (this.kgMateriaPrima < totalPlasticoNecessario) {
-            throw new FaltaMateriaPrimaException("Plástico insuficiente para produzir o lote.");
+            throw new FaltaMateriaPrimaException("Plástico insuficiente.");
         }
 
         // consome matéria-prima
         this.kgMateriaPrima -= totalPlasticoNecessario;
 
-        // registra produção na superclasse
+        // energia total
+        double totalEnergia = quantidade * energiaPorPeca;
+
+        // registra produção
         registrarProducao(quantidade, totalEnergia);
 
-        System.out.println("Produção concluída com sucesso: " + quantidade + " peças.");
+        System.out.println("Produção concluída: " + quantidade + " peças.");
     }
 }
